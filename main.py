@@ -363,7 +363,53 @@
 # print(matrix)
 
 
-letters = ["a", "b", "c"]
-numbs = [1, 2, 3]
-newList = [letters, numbs]
-print(list(zip(numbs, letters)))
+# letters = ["a", "b", "c"]
+# numbs = [1, 2, 3]
+# newList = [letters, numbs]
+# print(list(zip(numbs, letters)))
+#
+#
+#
+# nums = ["1", "2", "3", "4", "a"]
+# it = iter(nums)
+# print(it)
+# print(next(it))
+# print(next(it))
+# print(next(it))
+#
+#
+#
+# multiplyThree = lambda x: x * 3
+# print(list(map(multiplyThree, nums)))
+# print(list(filter(str.isalpha, nums)))
+# price = [1, 2, 6, 7]
+#
+#
+# priceModified = [x * 2 for x in price if x % 2 == 0]
+#
+# print(priceModified)
+#
+# tempSet = set()
+# tempSet.add(10)
+# print(tempSet)
+# print(10 in tempSet)
+# tempSet.remove(10)
+# print(tempSet)
+# print(10 in tempSet)
+#
+#
+# tempDict = {"id": 1, "age": 20, "college": "UBT"}
+# print(tempDict["id"])
+# print(tempDict.get("id"))
+#
+# tempDict["name"] = "Orgest"
+#
+# print(tempDict)
+# tempDict.pop("id", "Not Found")
+# print(tempDict)
+#
+
+user = {"id": 1, "name": "John", "age": 30, "city": "Berlin"}
+
+tempUser = [value.upper() for key, value in user.items() if isinstance(value, str)]
+print(tempUser)
