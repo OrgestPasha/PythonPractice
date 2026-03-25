@@ -312,24 +312,58 @@
 # print("".join(list(temp)))
 #
 
-temp_list = [
-    1,
-    0,
-    3,
-    1,
-    1,
-    11,
-    1,
-]
-temp_list.append(4)
-temp_list.pop()
-temp_list.insert(10, 0)
+# temp_list = [
+#    1,
+#    0,
+#    3,
+#    1,
+#    1,
+#    11,
+#    1,
+# ]
+# temp_list.append(4)
+# temp_list.pop()
+# temp_list.insert(10, 0)
+#
+# print(temp_list)
+# print(len(temp_list))
+# print(1 in (temp_list))
+# print(temp_list.count(1))
+# print(all(temp_list))
+# print(max(temp_list))
+# print(min(temp_list))
+# print(sum(temp_list))
+#
+#
+#
+# matrix = [
+#    [6, 2, 9],
+#    [3, 5, 4],
+#    [0, 7, 1],
+# ]
+#
+#
+# def sortMatrix(matrix: list[list[int]]):
+#    flat = []
+#
+#    for row in matrix:
+#        flat.extend(row)
+#
+#    flat.sort()
+#    cols = len(matrix)
+#
+#    tempMatrix = []
+#    for i in range(0, len(flat), cols):
+#        chunk = flat[i : i + cols]
+#        tempMatrix.append(chunk)
+#    return tempMatrix
+#
+#
+# matrix = sortMatrix(matrix)
+# print(matrix)
 
-print(temp_list)
-print(len(temp_list))
-print(1 in (temp_list))
-print(temp_list.count(1))
-print(all(temp_list))
-print(max(temp_list))
-print(min(temp_list))
-print(sum(temp_list))
+
+letters = ["a", "b", "c"]
+numbs = [1, 2, 3]
+newList = [letters, numbs]
+print(list(zip(numbs, letters)))
